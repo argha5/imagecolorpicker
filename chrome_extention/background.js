@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener((details) => {
 
         // Open welcome page on first install
         chrome.tabs.create({
-            url: chrome.runtime.getURL('../index.html')
+            url: 'https://argha5.github.io/imagecolorpicker/'
         });
     }
 
