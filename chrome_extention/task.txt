@@ -14,7 +14,7 @@ contextMenus justification:
 The contextMenus permission improves accessibility and workflow efficiency by adding a "Pick color from this page" item to the standard browser context menu. This allows users to quickly activate the color picker tool on any image or page area with a right-click, providing an alternative entry point to the toolbar icon or keyboard shortcuts.
 
 Host permission justification:
-The <all_urls> permission is required because the color picker utility is designed to work on general web content. Users need the ability to pick colors from any website they visit during their browsing session. The extension must be able to inject its color picking scripts into arbitrary pages to function as intended. This access is only utilized when the user proactively triggers the color picker tool.
+(LEAVE BLANK) - We have removed the <all_urls> permission to resolve the "Broad Host Permissions" warning. You no longer need to justify this.
 
 Are you using remote code?
 No, I am not using Remote code

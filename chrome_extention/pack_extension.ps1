@@ -7,7 +7,6 @@ $filesToZip = @(
     "manifest.json",
     "background.js",
     "content.js",
-    "content.css",
     "popup.html",
     "popup.css",
     "popup.js",
