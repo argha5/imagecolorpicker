@@ -1,0 +1,32 @@
+Single purpose description:
+The single purpose of this extension is to provide a comprehensive color picking tool for web developers and designers. It allows users to select precise pixels from any webpage using a magnifying glass overlay and instantly retrieve color values in multiple formats (HEX, RGB, HSL). The extension focuses strictly on this utility, ensuring a streamlined workflow for color extraction.
+
+activeTab justification:
+The activeTab permission is vital for the core functionality of color picking. It grants temporary access to the currently active tab only when the user explicitly interacts with the extension (via the toolbar icon or keyboard shortcut). This allows the extension to capture the visible tab area to generate a screenshot for pixel analysis, ensuring the user can pick colors from the specific page they are viewing without requiring broad background permissions.
+
+storage justification:
+The storage permission is used exclusively to enhance user experience by persisting local settings and data. Specifically, it saves the user's preferred UI theme (light/dark mode), their elected copy format (HEX, RGB, or HSL), and a local history of the last 12 picked colors. This ensures that user preferences and workflow context are preserved between sessions. All data is stored locally within the browser and is not synchronized to any external servers.
+
+scripting justification:
+The scripting permission is essential for injecting the user interface elements required for the color picking process. When activated, the extension injects a content script that renders the magnifying glass overlay, coordinate crosshairs, and color information display directly onto the webpage. This permission also handles the logic for capturing mouse events (movement and clicks) to determine which pixel color to extract, enabling the tool to function effectively on top of any web content.
+
+contextMenus justification:
+The contextMenus permission improves accessibility and workflow efficiency by adding a "Pick color from this page" item to the standard browser context menu. This allows users to quickly activate the color picker tool on any image or page area with a right-click, providing an alternative entry point to the toolbar icon or keyboard shortcuts.
+
+Host permission justification:
+The <all_urls> permission is required because the color picker utility is designed to work on general web content. Users need the ability to pick colors from any website they visit during their browsing session. The extension must be able to inject its color picking scripts into arbitrary pages to function as intended. This access is only utilized when the user proactively triggers the color picker tool.
+
+Are you using remote code?
+No, I am not using Remote code
+
+Privacy Policy URL:
+https://github.com/argha5/imagecolorpicker/blob/main/chrome_extention/PRIVACY.md
+
+Data Usage:
+1. "What user data do you plan to collect...?" -> **Do NOT check any boxes.** (Leave everything blank).
+   *   We do not collect PII, Health, Financial, Auth, Communications, Location, Web History, User Activity, or Website Content.
+
+2. "I certify that the following disclosures are true:" -> **Check ALL 3 boxes.**
+   *   [x] I do not sell or transfer user data...
+   *   [x] I do not use or transfer user data for purposes that are unrelated...
+   *   [x] I do not use or transfer user data to determine creditworthiness...
