@@ -12,7 +12,20 @@ A powerful Chrome extension for picking colors from any webpage with an intuitiv
 - ⚡ **Quick Actions**: Fast access to color values and copy functionality
 - 🚀 **Full App**: Access the complete color picker application
 
-## Installation
+## 📦 Chrome Web Store Publishing
+
+Want to publish this extension? Check out our detailed step-by-step guide:
+👉 **[How to Publish to Chrome Web Store](CHROME_WEB_STORE_GUIDE.md)**
+
+It includes:
+- How to pack the extension (`.zip`)
+- Developer account setup
+- Required assets and descriptions
+- Privacy policy justifications
+
+---
+
+## 🛠️ Development & Installation
 
 ### Loading Unpacked Extension (Development)
 
