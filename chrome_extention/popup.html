@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorPickPro</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <span class="logo-icon">🎨</span>
+            <span class="logo-text">ColorPick<span class="logo-accent">Pro</span></span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Pick from Page -->
+        <div class="section">
+            <h3 class="section-title">Pick from Page</h3>
+            <button class="btn btn-primary btn-full" id="pickColorBtn">
+                <span class="btn-icon">🎯</span>
+                <span>Start Picking Color</span>
+            </button>
+        </div>
+
+        <!-- Current Color Display -->
+        <div class="section" id="colorDisplay" style="display: none;">
+            <h3 class="section-title">Current Color</h3>
+
+            <div class="color-preview-boxes">
+                <div class="color-box" id="colorBox"></div>
+            </div>
+
+            <div class="color-formats">
+                <div class="format-row">
+                    <span class="format-label">HEX</span>
+                    <div class="format-value">
+                        <span class="value-text" id="hexValue">#000000</span>
+                        <button class="copy-btn" data-format="hex" title="Copy HEX">📋</button>
+                    </div>
+                </div>
+
+                <div class="format-row">
+                    <span class="format-label">RGB</span>
+                    <div class="format-value">
+                        <span class="value-text" id="rgbValue">rgb(0, 0, 0)</span>
+                        <button class="copy-btn" data-format="rgb" title="Copy RGB">📋</button>
+                    </div>
+                </div>
+
+                <div class="format-row">
+                    <span class="format-label">HSL</span>
+                    <div class="format-value">
+                        <span class="value-text" id="hslValue">hsl(0, 0%, 0%)</span>
+                        <button class="copy-btn" data-format="hsl" title="Copy HSL">📋</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color History -->
+        <div class="section" id="historySection" style="display: none;">
+            <div class="history-header">
+                <h3 class="section-title">Color History</h3>
+                <button class="btn-small btn-secondary" id="clearHistoryBtn">Clear</button>
+            </div>
+            <div class="color-history" id="colorHistory"></div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <!-- Format Selection -->
+            <div class="setting-row"
+                style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 13px; color: var(--text-secondary);">Auto-copy Format</span>
+                <select id="formatSelect"
+                    style="padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 12px; outline: none;">
+                    <option value="hex">HEX</option>
+                    <option value="rgb">RGB</option>
+                    <option value="hsl">HSL</option>
+                </select>
+            </div>
+
+            <button id="openFullAppBtn" class="action-btn">
+                <span>Open Full App</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast">
+            <span id="toastMessage"></span>
+        </div>
+
+        <script src="popup.js"></script>
+</body>
+
+</html>
