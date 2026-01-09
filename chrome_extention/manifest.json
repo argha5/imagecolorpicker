@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ColorPickPro - Advanced Color Picker",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Pick colors from any webpage, extract color palettes, and get HEX, RGB, HSL values instantly.",
     "permissions": [
         "activeTab",

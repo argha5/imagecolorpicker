@@ -170,7 +170,7 @@ function clearHistory() {
 
 // Open Full App
 function openFullApp() {
-    chrome.tabs.create({ url: 'https://argha5.github.io/imagecolorpicker/' });
+    chrome.tabs.create({ url: 'https://image-colorpicker.pages.dev/' });
 }
 
 // Toggle Theme
